@@ -36,10 +36,10 @@ class App extends React.Component {
   }
 }
 
-const tick = () => {
+// const tick = () => {
   ReactDOM.render(<App />, document.getElementById("root"));
-};
+// };
 
-setInterval(() => {
-  tick();
-}, 1000);
+// setInterval(() => {
+//   tick();
+// }, 1000);
