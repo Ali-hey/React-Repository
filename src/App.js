@@ -1,5 +1,5 @@
 import React from "react";
-// import ReactDOM from "react-dom";
+import ReactDOM from "react-dom";
 import "./style.css";
 import Hello from "./Hello";
 import Timer from "./Timer";
@@ -12,17 +12,11 @@ class App extends React.Component {
     }
   }
 
-handleSetTitle=()=>{
-  this.setState({
-    title: "Welcome"
-  })
-}
-
     render() {
       return (
         <div className="main">
           <Hello title={this.state.title}/>
-          <Timer handleSetTitle={this.handleSetTitle} />
+          <Timer/>
         </div>
       );
     }
